@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.main-container {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #ffffff;
+  display: flex;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+.left-panel, .right-panel {
+  height: 1000px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+.right-panel {
+  width: 540px;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.left-panel {
+  width: 300px;
+  background: #eceff1;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-panel {
+  width: 300px;
+  display: flex;
+  overflow: hidden; 
+}
+
+
+/* Text Content */
+.text-content {
+  padding: 20px;
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #eceff1; 
+}
+
+.nccu-icon img {
+  width: 280px;
+  align-self: left;
+}
+
+
+/* Right Panel Sections */
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.year {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.homework-list {
+  margin-bottom: 30px;
+}
+
+.homework-grid {
+  display: grid;
+  grid-template-columns: 80px auto; 
+  row-gap: 10px;
+  align-items: center;
+}
+
+.homework-item {
+  display: contents; 
+}
+
+.hw-title {
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.homework-item a {
+  text-align: left;
+  color: #007bff;
+  text-decoration: none;
+  word-break: break-all; 
+}
+
+.homework-item a:hover {
+  text-decoration: underline;
+}
+
+
+.music-grid {
+    display: inline-flex;
+    gap: 10px; 
+    flex-direction: row;
+}
+
+
+.music-grid span {
+    font-size: 16px; 
+    word-break: break-word; /* 防止超長文字破壞排版 */
+}
+
+
+.music-grid img {
+  width: 60px; 
+  height: auto; 
+  object-fit: cover; /* 確保圖片不變形 */
+  border-radius: 4px; 
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+#music-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#music-form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#music-form button {
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#music-form button:hover {
+    background: #0056b3;
+}
+
+.music-grid a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.music-grid img {
+    border-radius: 4px;
+    margin-right: 10px;
+}
